@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q3</title>
+        <script language="JavaScript">
+            var a = 545;
+            var temp = a;
+            var rev = 0;
+            while(temp>0){
+                var rem = temp%10;
+                rev = (rev*10) + rem;
+                temp = Math.floor(temp/10);
+            }
+            if(a == rev){
+                console.log("It is a palindrome number");
+            }
+            else{
+                console.log("It is not a palindrome number");
+            }
+        </script>
+    </head>
+    <body bgcolor="pink" text="red"></body>
+</html>

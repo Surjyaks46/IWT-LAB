@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q5</title>
+        <h1>Q5</h1>
+        <script language="JavaScript">
+            let arr = new Array(10, 25, 8, 32, 19); 
+            let largest = -Infinity; 
+            let secondLargest = -Infinity; 
+            for (let i = 0; i < arr.length; i++) { 
+                if (arr[i] > largest) { 
+                    secondLargest = largest; 
+                    largest = arr[i]; 
+                } 
+                 else if (arr[i] > secondLargest && arr[i] !== largest) { 
+                      secondLargest = arr[i]; 
+               }
+            }
+            console.log("Second Largest element:"+secondLargest);
+        </script>
+    </head>
+    <body bgcolor="pink" text="blue"></body>
+</html>

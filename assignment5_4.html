@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q4</title>
+        <h1>Q4</h1>
+        <script language="JavaScript">
+            const numbers = [12, 45, 2, 67, 34, 8];
+
+            let sum = 0;
+            let largest = numbers[0];
+            let smallest = numbers[0];
+
+            for (let i = 0; i < numbers.length; i++) {
+                sum += numbers[i];
+                if (numbers[i] > largest) largest = numbers[i];
+                if (numbers[i] < smallest) smallest = numbers[i];
+            }
+
+            const average = sum / numbers.length;
+
+            console.log("Sum: ",sum);
+            console.log("Average: ",average);
+            console.log("Largest: ",largest);
+            console.log("Smallest: ",smallest);
+        </script>
+    </head>
+    <body bgcolor="pink" text="blue"></body>
+</html>
