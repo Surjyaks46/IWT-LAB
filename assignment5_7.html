@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q7</title>
+        <script language="JavaScript">
+            function countOccurrences(arr) {
+                let counts = {};
+
+                for (let i = 0; i < arr.length; i++) {
+                     let element = arr[i];
+                     if (counts[element]) {
+                        counts[element] += 1;
+                    } else {
+                        counts[element] = 1;
+                    }
+                }
+                return counts;
+            }
+            let array = [1, 2, 2, 3, 4, 4, 4, 5];
+            let result = countOccurrences(array);
+            console.log(result);
+        </script>
+    </head>
+    <body bgcolor="pink"></body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <title>Q10</title>
+    <script language="JavaScript">
+        
+        function twoArray(odd_arr) {
+            let even_elements = [];
+            let odd_elements = [];
+
+            for (let i = 0; i < odd_arr.length; i++) {
+                if (odd_arr[i] % 2 === 0) {
+                    even_elements.push(odd_arr[i]); 
+                } else {
+                    odd_elements.push(odd_arr[i]);
+                }
+            }
+
+            console.log("Even Indices:", even_elements);
+            console.log("Odd Indices:", odd_elements);
+        }
+        let odd_arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        twoArray(odd_arr);
+    </script>
+    <body bgcolor="pink" text="green"></body>
+</html>

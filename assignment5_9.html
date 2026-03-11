@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q9</title>
+</head>
+<body bgcolor="pink" text="black">
+    <script>
+        let number = prompt("Enter the number to check whether armstrong or not: "); 
+
+        function Armstrong(num) { 
+            let digits = num.toString().split('');
+            let power = digits.length;
+            let sum = 0;
+            for (let d of digits) {
+                sum += Math.pow(parseInt(d), power);
+            }
+            return sum === num;
+        }
+        let result = Armstrong(number);
+        document.write("<p>The number <b>" + number + "</b> is an Armstrong number: <b>" + result + "</b></p>");
+    </script>
+</body>
+</html>

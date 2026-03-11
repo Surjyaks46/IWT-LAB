@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q8</title>
+        <script language="JavaScript">
+            function isPrime(num){
+                   for (let i = 2; i < num; i++) {
+                        if (num % i === 0) {
+                            return false;
+                        }
+                    }
+                    return true;
+            }
+            let num = 13;
+            if (isPrime(num)){
+                document.write("It is a prime number");
+            }
+            else{
+                document.write("It is a composite number");
+            }
+        </script>
+    </head>
+    <body bgcolor="pink" text="green"></body>
+</html>
