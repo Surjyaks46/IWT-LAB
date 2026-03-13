@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment10</title>
+    <style>
+        .body, html{
+
+        }
+        .container{
+            display: grid;
+            height: 100px;
+        }
+        .quadrant{
+            display:flex;
+            align-items: center;
+            border: 2px;
+
+        }
+    </style>
+    <script>
+            function abc()
+            {
+                let a = document.getElementById("x").value;
+                if(a == "red") document.bgColor="red";
+                else if(a == "green") document.bgColor="green";
+                else if(a == "blue") document.bgColor="blue";
+                else if(a == "yellow") document.bgColor="yellow";
+                else if(a == "none") document.bgColor="white";
+                else if(a == "pink") document.bgColor="pink";
+            }
+            function abc1()
+            {
+                let a = document.getElementById("y").value;
+                if(a == "red") document.bgColor="red";
+                else if(a == "green") document.bgColor="green";
+                else if(a == "blue") document.bgColor="blue";
+                else if(a == "yellow") document.bgColor="yellow";
+                else if(a == "none") document.bgColor="white";
+                else if(a == "pink") document.bgColor="pink";
+            }
+            function abc2()
+            {
+                let a = document.getElementById("z").value;
+                if(a == "red") document.bgColor="red";
+                else if(a == "green") document.bgColor="green";
+                else if(a == "blue") document.bgColor="blue";
+                else if(a == "yellow") document.bgColor="yellow";
+                else if(a == "none") document.bgColor="white";
+                else if(a == "pink") document.bgColor="pink";
+            }
+            function abc3()
+            {
+                let a = document.getElementById("k").value;
+                if(a == "red") document.bgColor="red";
+                else if(a == "green") document.bgColor="green";
+                else if(a == "blue") document.bgColor="blue";
+                else if(a == "yellow") document.bgColor="yellow";
+                else if(a == "none") document.bgColor="white";
+                else if(a == "pink") document.bgColor="pink";
+            }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="quadrant" style="background: white">topleft
+            <select id="x" onchange="abc()">
+                <option value="none">none</option>
+                <option value="red">red</option>
+                <option value="green">green</option>
+                <option value="blue">blue</option>
+                <option value="yellow">yellow</option>
+			    <option value="pink">pink</option>
+        </select>
+        </div>
+	</div>
+       <div class="container">
+            <div class="quadrant" style="background: white">topright
+                <select id="y" onchange="abc1()">
+                    <option value="none">none</option>
+                    <option value="red">red</option>
+                    <option value="green">green</option>
+                    <option value="blue">blue</option>
+                    <option value="yellow">yellow</option>
+			        <option value="pink">pink</option>
+                </select>
+	        </div>
+       <div class="quadrant">
+        <select id="x" onchange="abc2()">
+            <option value="none">none</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+            <option value="yellow">yellow</option>
+			<option value="pink">pink</option>
+        </select>
+	</div>
+       <div class="quadrant">
+        <select id="x" onchange="abc3()">
+            <option value="none">none</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+            <option value="yellow">yellow</option>
+			<option value="pink">pink</option>
+        </select>
+	</div>
+
+    </div>
+    
+</body>
+</html>
