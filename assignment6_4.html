@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignmrt-6 Question-4</title>
+    <script language="JavaScript">
+        function updateCounter(val) {
+            const input = document.getElementById("counter-input");
+            let currentVal = parseInt(input.value);
+            let newVal = currentVal + val;
+
+            if (newVal >= 0) {
+                input.value = newVal;
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="counter-input" value="0">
+    <button onclick="updateCounter(1)">+</button>
+    <button onclick="updateCounter(-1)">-</button>
+</body>
+</html>

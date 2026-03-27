@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-6 Question-2</title>
+    <script language="JavaScript">
+            function toggleVisibility() {
+                const p = document.getElementById("toggle-p");
+                const btn = document.getElementById("toggle-btn");
+                
+                if (p.style.display === "none") {
+                    p.style.display = "block";
+                    btn.innerText = "Hide";
+                } else {
+                    p.style.display = "none";
+                    btn.innerText = "Show";
+                }
+            }
+    </script>
+</head>
+<body> 
+    <p id="toggle-p">This is a paragraph that you can hide or show.</p>
+    <button id="toggle-btn" onclick="toggleVisibility()">Hide</button>
+</body>
+</html>
